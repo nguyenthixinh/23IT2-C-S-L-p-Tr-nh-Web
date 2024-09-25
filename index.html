@@ -1,39 +1,73 @@
 <!DOCTYPE html>
 <html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bài tập 3</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="main">
-        <div class="container1">
-            <h1>Bài tập 3</h1>
-            <h2>Cách sử dụng section của thẻ div</h2>
-            <p>Div thường được sử dụng để nhóm các phần tử HTML lại với nhau...</p>
-            <p>Đồng hồ đeo tay là một thiết bị được thiết kế để mang hoặc đeo trên người...</p>
+    <head>
+        <meta charset="utf-8">
+        <title>bt4</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+               
+        <style>
+            .item {
+                margin: 10px;
+                text-align: center;
+                font-size: 24px; /* Đặt kích thước font chữ */
+            }
+            .item img {
+                width: 100px; /* Đặt chiều rộng cố định */
+                height: auto; /* Đặt chiều cao thay đổi theo để ảnh không bị biến dạng */
+                margin-right: 30px; /* Đặt khoảng cách 30 pixel giữa các ảnh */
+            }
+            /* Bổ sung một chút cho phần căn chỉnh tổng thể */
+            body {
+                font-family: Arial, sans-serif;
+            }
+            .container {
+                display: flex;
+                justify-content: space-between;
+                margin: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <!-- Phần văn bản giới thiệu -->
+            <div>
+                <h1>
+                    Bài tập 4  
+                </h1>
+                <h2>
+                    Cách sử dụng section của thẻ div
+                </h2>
+                <p>
+                div thường được sử dụng để nhóm các phần tử HTML lại với nhau để tạo các khu vực trên trang web, đặt 1 số thuộc tính chung trên toàn bộ các phần tử HTML trong phạm vi của section.
+                </p>
+                <p>
+                    Đồng hồ đeo tay là một thiết bị được thiết kế để mang hoặc đeo trên người. Nó được thiết kế để tiếp tục hoạt động bất chấp các chuyển động gây ra bởi các hoạt động của người đó. Đồng hồ đeo tay được thiết kế để đeo quanh cổ tay, được gắn bởi dây đeo đồng hồ hoặc loại vòng đeo tay khác.
+                    Hiện nay, có rất nhiều loại đồng hồ đeo tay khác nhau trên thị trường. Mỗi loại có những tính năng và thiết kế riêng biệt. Tuy nhiên, không rõ bạn muốn giới thiệu về loại đồng hồ nào cụ thể. Nếu bạn có thông tin chi tiết hơn về loại đồng hồ mà bạn muốn giới thiệu, xin vui lòng cung cấp cho tôi để tôi có thể giúp bạn tốt hơn.
+                </p>
+            </div>
+           
+            <!-- Phần hình ảnh đồng hồ -->
+            <div>
+                <div class="item">
+                    <img src="watch1.jpg" alt="Đồng hồ 1" >
+                    <p>
+                        Đồng hồ 1 đẹp
+                    </p>
+                </div>
+                <div class="item">
+                    <img src="watch2.jpg" alt="Đồng hồ 2" >
+                    <p>
+                        Đồng hồ 2 phù hợp
+                    </p>
+                </div>
+                <div class="item">
+                    <img src="watch3.jpg" alt="Đồng hồ 3" >
+                    <p>
+                        Đồng hồ 3 rất sang trọng
+                    </p>
+                </div>
+            </div>
         </div>
-    
-        <div class="container2">
-            <div class="item">
-                <img src="watch1.jpg" alt="Đồng hồ 1">
-                <p>Đồng hồ 1 đẹp</p>
-            </div>
-            <div class="item">
-                <img src="watch2.jpg" alt="Đồng hồ 2">
-                <p>Đồng hồ 2 phù hợp</p>
-            </div>
-            <div class="item">
-                <img src="watch3.jpg" alt="Đồng hồ 3">
-                <p>Đồng hồ 3 rất sang trọng</p>
-            </div>
-        </div>
-    </div>
-    
-
-    <footer>
-        <a href="https://shopee.vn/time.clock">Liên hệ</a>
-    </footer>
-</body>
+    </body>
 </html>
