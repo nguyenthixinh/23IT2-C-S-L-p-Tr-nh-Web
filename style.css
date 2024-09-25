@@ -1,0 +1,34 @@
+/* Đặt nền cho footer */
+footer {
+    background-color: lightblue;
+}
+
+/* Căn các item theo chiều dọc và sang bên phải */
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; /* Hiển thị các phần tử theo chiều dọc */
+    align-items: flex-end; /* Căn các phần tử về bên phải */
+}
+
+/* Style cho từng item (ảnh + mô tả) */
+.item {
+    margin: 10px;
+    text-align: center;
+    font-size: 24px;
+}
+
+/* Style cho ảnh */
+.item img {
+    width: 100px; /* Chiều rộng cố định cho ảnh */
+    height: auto; /* Tự động điều chỉnh chiều cao theo tỷ lệ */
+    margin-right: 30px;
+}
+
+/* Định dạng bố cục chính */
+.main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: flex-end; /* Căn các phần tử bên phải */
+    align-items: center; /* Căn giữa theo chiều dọc */
+}
