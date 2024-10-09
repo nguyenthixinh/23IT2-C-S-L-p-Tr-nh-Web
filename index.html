@@ -1,73 +1,97 @@
 <!DOCTYPE html>
 <html lang="vi">
-    <head>
-        <meta charset="utf-8">
-        <title>bt4</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-               
-        <style>
-            .item {
-                margin: 10px;
-                text-align: center;
-                font-size: 24px; /* Đặt kích thước font chữ */
-            }
-            .item img {
-                width: 100px; /* Đặt chiều rộng cố định */
-                height: auto; /* Đặt chiều cao thay đổi theo để ảnh không bị biến dạng */
-                margin-right: 30px; /* Đặt khoảng cách 30 pixel giữa các ảnh */
-            }
-            /* Bổ sung một chút cho phần căn chỉnh tổng thể */
-            body {
-                font-family: Arial, sans-serif;
-            }
-            .container {
-                display: flex;
-                justify-content: space-between;
-                margin: 20px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <!-- Phần văn bản giới thiệu -->
-            <div>
-                <h1>
-                    Bài tập 4  
-                </h1>
-                <h2>
-                    Cách sử dụng section của thẻ div
-                </h2>
-                <p>
-                div thường được sử dụng để nhóm các phần tử HTML lại với nhau để tạo các khu vực trên trang web, đặt 1 số thuộc tính chung trên toàn bộ các phần tử HTML trong phạm vi của section.
-                </p>
-                <p>
-                    Đồng hồ đeo tay là một thiết bị được thiết kế để mang hoặc đeo trên người. Nó được thiết kế để tiếp tục hoạt động bất chấp các chuyển động gây ra bởi các hoạt động của người đó. Đồng hồ đeo tay được thiết kế để đeo quanh cổ tay, được gắn bởi dây đeo đồng hồ hoặc loại vòng đeo tay khác.
-                    Hiện nay, có rất nhiều loại đồng hồ đeo tay khác nhau trên thị trường. Mỗi loại có những tính năng và thiết kế riêng biệt. Tuy nhiên, không rõ bạn muốn giới thiệu về loại đồng hồ nào cụ thể. Nếu bạn có thông tin chi tiết hơn về loại đồng hồ mà bạn muốn giới thiệu, xin vui lòng cung cấp cho tôi để tôi có thể giúp bạn tốt hơn.
-                </p>
-            </div>
-           
-            <!-- Phần hình ảnh đồng hồ -->
-            <div>
-                <div class="item">
-                    <img src="watch1.jpg" alt="Đồng hồ 1" >
-                    <p>
-                        Đồng hồ 1 đẹp
-                    </p>
-                </div>
-                <div class="item">
-                    <img src="watch2.jpg" alt="Đồng hồ 2" >
-                    <p>
-                        Đồng hồ 2 phù hợp
-                    </p>
-                </div>
-                <div class="item">
-                    <img src="watch3.jpg" alt="Đồng hồ 3" >
-                    <p>
-                        Đồng hồ 3 rất sang trọng
-                    </p>
-                </div>
-            </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đội Tuyển Bóng Đá Việt Nam</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: grid;
+            grid-template-areas:
+                "header-left header-right"
+                "nav content"
+                "footer footer";
+            grid-template-columns: 1fr 3fr;
+            grid-template-rows: auto 1fr auto;
+            height: 100vh;
+        }
+        /* Header left */
+        .header-left {
+            grid-area: header-left;
+            background-color: #5A0000; /* Màu đỏ đậm */
+            padding: 30px;
+            border-top: 2px solid black;
+            border-left: 2px solid black;
+            border-bottom: 2px solid black;
+        }
+        /* Header right */
+        .header-right {
+            grid-area: header-right;
+            background-color: #8B0000; /* Màu đỏ nhạt hơn */
+            padding: 30px;
+            border: 2px solid black;
+            border-left: none; /* Loại bỏ viền trái để tách biệt */
+            text-align: center;
+            color: white;
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+        nav {
+            grid-area: nav;
+            background-color: #435129; /* Màu xanh ô liu */
+            padding: 20px;
+            color: white;
+            border: 2px solid black;
+            text-align: center;
+            font-size: 1.2em;
+        }
+        .content {
+            grid-area: content;
+            background-color: #b27334; /* Màu nâu */
+            padding: 20px;
+            color: white;
+            border: 2px solid black;
+        }
+        footer {
+            grid-area: footer;
+            background-color: #306c4a; /* Màu xanh lá cây */
+            padding: 20px;
+            text-align: center;
+            color: white;
+            border: 2px solid black;
+            font-size: 1.2em;
+        }
+        .content img {
+            float: left;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header-left"></div>
+        <div class="header-right">Đội Tuyển Bóng Đá Việt Nam</div>
+        <nav>
+            Tin Tức Mới Nhất
+        </nav>
+        <div class="content">
+            <img src="https://via.placeholder.com/150" alt="Đội tuyển Việt Nam">
+            <h2>Đội tuyển Việt Nam chuẩn bị cho vòng loại sắp tới</h2>
+            <p>Đội tuyển bóng đá quốc gia Việt Nam đang chuẩn bị cho các trận đấu vòng loại World Cup sắp tới với hy vọng cao. Dưới sự dẫn dắt của HLV Philippe Troussier, đội đã có sự cải thiện rõ rệt cả về tấn công và phòng ngự. Người hâm mộ trên khắp cả nước đang háo hức chờ đợi các trận đấu sắp tới, hy vọng rằng đội tuyển Việt Nam sẽ tiếp tục phong độ ấn tượng và vượt qua vòng loại tiếp theo.</p>
+
+            <p>Trong các trận giao hữu gần đây, Việt Nam đã thể hiện tinh thần đồng đội xuất sắc và lối chơi chiến thuật vững vàng. Những cầu thủ chủ chốt như Quang Hải và Tiến Linh được kỳ vọng sẽ dẫn dắt đội đến những đỉnh cao mới, với phong độ ấn tượng tại các giải đấu trong nước và quốc tế giúp họ tự tin đối mặt với các đối thủ mạnh hơn.</p>
+
+            <p>Liên đoàn Bóng đá Việt Nam (VFF) cũng đang đầu tư vào công tác phát triển các tài năng trẻ, đảm bảo rằng đội tuyển quốc gia sẽ có nguồn nhân lực trẻ vững chắc để tin cậy trong các giải đấu tương lai. Với sự kết hợp giữa các cầu thủ giàu kinh nghiệm và những ngôi sao trẻ, tương lai của bóng đá Việt Nam có vẻ rất sáng sủa.</p>
+
+            <p>Trận đấu vòng loại đầu tiên dự kiến sẽ diễn ra vào tháng sau, và người hâm mộ được khuyến khích cổ vũ nhiệt tình cho đội tuyển. Với quyết tâm và niềm tự hào dân tộc, đội tuyển Việt Nam đã sẵn sàng đối mặt với thử thách và tạo dấu ấn trên sân chơi thế giới.</p>
         </div>
-    </body>
+        <footer>
+            &copy; 2024 Tin Tức Bóng Đá Việt Nam. Mọi quyền được bảo lưu.
+        </footer>
+    </div>
+</body>
 </html>
