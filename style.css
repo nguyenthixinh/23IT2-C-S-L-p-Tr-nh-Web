@@ -1,38 +1,95 @@
-/* Style cho footer */
-footer {
-    background-color: lightblue;
+/* Nền cho menu */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
 }
 
-/* Container của toàn bộ nội dung */
-.main {
-    display: flex;
-    justify-content: space-between; /* Chia đều không gian giữa 2 phần chính */
-    align-items: flex-start; /* Căn bắt đầu từ phía trên */
+.main-content {
+    max-width: 1200px;
+    margin: 20px auto;
     padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Phần nội dung text bên trái */
-.container1 {
-    width: 60%; /* Chiếm 60% chiều rộng */
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #4a4a4a;
+    margin-top: 20px;
 }
 
-/* Phần container chứa ảnh */
-.container2 {
-    width: 30%; /* Chiếm 30% chiều rộng */
-    display: flex;
-    flex-direction: column; /* Căn ảnh theo chiều dọc */
-    justify-content: flex-start;
-    align-items: flex-end; /* Căn tất cả ảnh về bên phải */
+p {
+    color: #6b6b6b;
+    line-height: 1.5;
 }
 
-/* Style cho từng item ảnh và mô tả */
+ul {
+    margin-top: 10px;
+    color: #6b6b6b;
+}
+
 .item {
-    margin-bottom: 20px;
-    text-align: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
 }
 
-/* Style cho hình ảnh */
-.item img {
-    width: 100px;
-    height: auto;
+.item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+img {
+    border-radius: 8px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.bg-blue-600 {
+    background-color: #3b82f6;
+    color: white;
+}
+
+.bg-blue-600:hover {
+    background-color: #2563eb;
+}
+
+.bg-green-600 {
+    background-color: #22c55e;
+    color: white;
+}
+
+.bg-green-600:hover {
+    background-color: #16a34a;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.text-lg {
+    font-size: 1.125rem;
+}
+
+.sidebar-link {
+    color: #3b82f6;
+    font-weight

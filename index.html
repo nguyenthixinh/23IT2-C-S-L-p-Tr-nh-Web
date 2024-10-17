@@ -3,95 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Đội Tuyển Bóng Đá Việt Nam</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-        .container {
-            display: grid;
-            grid-template-areas:
-                "header-left header-right"
-                "nav content"
-                "footer footer";
-            grid-template-columns: 1fr 3fr;
-            grid-template-rows: auto 1fr auto;
-            height: 100vh;
-        }
-        /* Header left */
-        .header-left {
-            grid-area: header-left;
-            background-color: #5A0000; /* Màu đỏ đậm */
-            padding: 30px;
-            border-top: 2px solid black;
-            border-left: 2px solid black;
-            border-bottom: 2px solid black;
-        }
-        /* Header right */
-        .header-right {
-            grid-area: header-right;
-            background-color: #8B0000; /* Màu đỏ nhạt hơn */
-            padding: 30px;
-            border: 2px solid black;
-            border-left: none; /* Loại bỏ viền trái để tách biệt */
-            text-align: center;
-            color: white;
-            font-size: 2.5em;
-            font-weight: bold;
-        }
-        nav {
-            grid-area: nav;
-            background-color: #435129; /* Màu xanh ô liu */
-            padding: 20px;
-            color: white;
-            border: 2px solid black;
-            text-align: center;
-            font-size: 1.2em;
-        }
-        .content {
-            grid-area: content;
-            background-color: #b27334; /* Màu nâu */
-            padding: 20px;
-            color: white;
-            border: 2px solid black;
-        }
-        footer {
-            grid-area: footer;
-            background-color: #306c4a; /* Màu xanh lá cây */
-            padding: 20px;
-            text-align: center;
-            color: white;
-            border: 2px solid black;
-            font-size: 1.2em;
-        }
-        .content img {
-            float: left;
-            margin-right: 20px;
-        }
-    </style>
+    <title>Trang Bán Đấu Giá - Bóng Đá</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="container">
-        <div class="header-left"></div>
-        <div class="header-right">Đội Tuyển Bóng Đá Việt Nam</div>
-        <nav>
-            Tin Tức Mới Nhất
-        </nav>
-        <div class="content">
-            <img src="https://via.placeholder.com/150" alt="Đội tuyển Việt Nam">
-            <h2>Đội tuyển Việt Nam chuẩn bị cho vòng loại sắp tới</h2>
-            <p>Đội tuyển bóng đá quốc gia Việt Nam đang chuẩn bị cho các trận đấu vòng loại World Cup sắp tới với hy vọng cao. Dưới sự dẫn dắt của HLV Philippe Troussier, đội đã có sự cải thiện rõ rệt cả về tấn công và phòng ngự. Người hâm mộ trên khắp cả nước đang háo hức chờ đợi các trận đấu sắp tới, hy vọng rằng đội tuyển Việt Nam sẽ tiếp tục phong độ ấn tượng và vượt qua vòng loại tiếp theo.</p>
+<body class="bg-gradient-to-r from-cyan-200 to-purple-300">
+    <header class="flex justify-between items-center p-4 bg-white shadow-md">
+        <img src="logo.jpg" alt="Logo Bóng Đá" width="50" height="50">
+        <h1 class="text-2xl font-bold">Đấu Trường Bóng Đá</h1>
+    </header>
 
-            <p>Trong các trận giao hữu gần đây, Việt Nam đã thể hiện tinh thần đồng đội xuất sắc và lối chơi chiến thuật vững vàng. Những cầu thủ chủ chốt như Quang Hải và Tiến Linh được kỳ vọng sẽ dẫn dắt đội đến những đỉnh cao mới, với phong độ ấn tượng tại các giải đấu trong nước và quốc tế giúp họ tự tin đối mặt với các đối thủ mạnh hơn.</p>
-
-            <p>Liên đoàn Bóng đá Việt Nam (VFF) cũng đang đầu tư vào công tác phát triển các tài năng trẻ, đảm bảo rằng đội tuyển quốc gia sẽ có nguồn nhân lực trẻ vững chắc để tin cậy trong các giải đấu tương lai. Với sự kết hợp giữa các cầu thủ giàu kinh nghiệm và những ngôi sao trẻ, tương lai của bóng đá Việt Nam có vẻ rất sáng sủa.</p>
-
-            <p>Trận đấu vòng loại đầu tiên dự kiến sẽ diễn ra vào tháng sau, và người hâm mộ được khuyến khích cổ vũ nhiệt tình cho đội tuyển. Với quyết tâm và niềm tự hào dân tộc, đội tuyển Việt Nam đã sẵn sàng đối mặt với thử thách và tạo dấu ấn trên sân chơi thế giới.</p>
-        </div>
-        <footer>
-            &copy; 2024 Tin Tức Bóng Đá Việt Nam. Mọi quyền được bảo lưu.
-        </footer>
+    <div class="relative my-4">
+        <img src="sanbong.png" alt="Banner Chính" class="w-full h-auto rounded-md">
+        <h2 class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-3xl font-semibold bg-black bg-opacity-50 p-2 rounded-md">Chào mừng đến với thế giới bóng đá!</h2>
     </div>
+
+    <nav class="bg-gradient-to-r from-green-400 to-yellow-400 p-2">
+        <div class="flex justify-around">
+            <a href="#" class="nav-item">Trang Chủ</a>
+            <a href="#" class="nav-item">Giới Thiệu</a>
+            <a href="#" class="nav-item">Tin Tức</a>
+            <a href="#" class="nav-item">Trận Đấu</a>
+            <a href="#" class="nav-item">Đấu Giá Vé</a>
+            <a href="#" class="nav-item">Liên Hệ</a>
+            <a href="#" class="nav-item">Tài Nguyên</a>
+        </div>
+    </nav>
+
+    <main class="flex p-4">
+        <div class="main-content flex-1 bg-white shadow-lg rounded-lg p-6">
+            <h2 class="text-2xl font-bold text-gray-800">Chào Mừng Đến Với Trang Đấu Giá Vé Bóng Đá</h2>
+            <p class="mt-2 text-gray-600">Khám phá những trận cầu đỉnh cao và sở hữu vé của các giải đấu lớn tại đây!</p>
+            <ul class="list-disc ml-5 mt-2 text-gray-600">
+                <li>Những trận đấu nảy lửa giữa các đội bóng hàng đầu.</li>
+                <li>Cơ hội sở hữu vé VIP và trải nghiệm tuyệt vời.</li>
+                <li>Tham gia các phiên đấu giá vé cho các trận đấu quan trọng.</li>
+            </ul>
+            
+            <h2 class="text-2xl font-bold text-gray-800 mt-4">Về Chúng Tôi</h2>
+            <p class="text-gray-600">Chúng tôi là nền tảng đấu giá hàng đầu dành cho những người yêu thích bóng đá và trải nghiệm các trận đấu sống động.</p>
+            
+            <h2 class="text-2xl font-bold text-gray-800 mt-4">Danh Sách Trận Đấu Đấu Giá Vé</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-2">
+                <div class="item bg-gray-50 p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <strong class="text-lg font-semibold">Trận Chung Kết Cúp Quốc Gia</strong> - Vé VIP cho trải nghiệm không thể bỏ qua.
+                    <img src="images.jpg" alt="Trận Chung Kết" class="w-full h-48 object-cover rounded-md mt-2">
+                    <p class="mt-2 text-gray-500">Thời gian đấu giá: 10:00 AM - 11:00 AM</p>
+                    <p class="text-gray-500">Thời gian chuẩn bị: 9:30 AM</p>
+                    <div class="flex justify-between mt-2">
+                        <button class="bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition duration-200">Đấu Giá</button>
+                        <button class="bg-green-600 text-white py-2 px-4 rounded-md hover:bg-green-700 transition duration-200">Mua Ngay</button>
+                    </div>
+                </div>
+                <!-- More items... -->
+            </div>
+        </div>     
+        <aside class="sidebar w-1/3 bg-white shadow-md rounded-md p-4 ml-4">
+            <div class="menu-section relative bg-purple-50 shadow-sm rounded-md overflow-hidden mb-4">
+                <img src="thongtinve.png" alt="Hình nền menu" class="w-full h-32 object-cover">
+                <a href="#menu" class="cursor-pointer p-4 block">
+                    <h3 class="text-center text-blue-600 font-semibold">Chi tiết</h3>
+                </a>
+                <div id="menu" class="hidden">
+                    <ul id="menu-list" class="mt-2 list-none p-4">
+                        <li><a href="#" class="sidebar-link">Cúp C1 Châu Âu</a></li>
+                        <li><a href="#" class="sidebar-link">Ngoại Hạng Anh</a></li>
+                        <li><a href="#" class="sidebar-link">La Liga</a></li>
+                        <li><a href="#" class="sidebar-link">Bundesliga</a></li>
+                        <li><a href="#" class="sidebar-link">Serie A</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- More sections... -->
+        </aside>        
+    </main>
+    <footer class="bg-gray-800 text-white text-center p-4">
+        <p>© Bản quyền 2024. Thiết kế bởi đội ngũ phát triển của chúng tôi.</p>
+        <div class="flex justify-center space-x-4 mt-2">
+            <a href="#" class="text-white hover:underline">Trang Chủ</a>
+            <a href="#" class="text-white hover:underline">Giới Thiệu</a>
+            <a href="#" class="text-white hover:underline">Tin Tức</a>
+            <a href="#" class="text-white hover:underline">Trận Đấu</a>
+            <a href="#" class="text-white hover:underline">Đấu Giá Vé</a>
+            <a href="#" class="text-white hover:underline">Liên Hệ</a>
+            <a href="#" class="text-white hover:underline">Tài Nguyên</a>
+        </div>
+    </footer>
 </body>
 </html>
