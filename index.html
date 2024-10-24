@@ -1,75 +1,87 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> 
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Football Web Layout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Cửa hàng trang sức cung cấp các sản phẩm chất lượng cao, thiết kế tinh xảo.">
+    <meta name="keywords" content="trang sức, vòng cổ, nhẫn, kim cương, trang sức vàng">
+    <meta name="author" content="Cửa Hàng Trang Sức LuxJewel">
     <link rel="stylesheet" href="style.css">
+
+    <title>LuxJewel - Trang Sức Cao Cấp</title>
 </head>
 <body>
+
+    <!-- Header -->
     <header>
-        <div id="header-title">
-            <h1>Football Fan Zone</h1>
-            <p>All About Football</p>
+        <div class="logo">
+            <img src="images.jpg" alt="LuxJewel Logo">
         </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Trang Chủ</a></li>
+                <li><a href="#products">Sản Phẩm</a></li>
+                <li><a href="#about">Giới Thiệu</a></li>
+                <li><a href="#contact">Liên Hệ</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Teams</a></li>
-            <li><a href="#">Matches</a></li>
-            <li><a href="#">Players</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Statistics</a></li>
-            <li><a href="#">About Us</a></li>
-        </ul>
-    </nav>
+    <!-- Banner -->
+    <section class="banner">
+        <h1>Chào Mừng Đến Với LuxJewel</h1>
+        <p>Khám phá những món trang sức sang trọng, tinh xảo.</p>
+        <a href="#about" class="btn">Tìm Hiểu Thêm</a>
+    </section>
 
-    <div class="main-content">
-        <section class="left-column">
-            <div id="about">
-                <h2>About Football</h2>
-                <p>Football is the most popular sport in the world, played by millions of players in teams of 11...</p>
-            </div>
+    <!-- Giới Thiệu -->
+    <section id="about">
+        <h2>Giới Thiệu Về LuxJewel</h2>
+        <p>LuxJewel chuyên cung cấp trang sức cao cấp với thiết kế độc đáo và chất lượng hàng đầu, giúp bạn tỏa sáng trong mọi sự kiện.</p>
+        <a href="#products" class="btn">Khám Phá Sản Phẩm Của Chúng Tôi</a>
+    </section>
 
-            <div id="content-sections">
-                <div id="introductions">
-                    <h2>Latest Matches</h2>
-                    <p>Check out the latest match results and highlights from the world of football...</p>
-                    <button>More</button>
-                </div>
+    <!-- Sản Phẩm -->
+    <section id="products">
+        <h2>Sản Phẩm Của Chúng Tôi</h2>
+        <div class="product">
+            <img src="vongco.jpg" alt="Vòng Cổ">
+            <h3>Vòng Cổ Kim Cương</h3>
+            <p>Vòng cổ tinh tế với viên kim cương lấp lánh, hoàn hảo cho các dịp quan trọng.</p>
+            <a href="product-details.html" class="btn">Tìm Hiểu Thêm</a>
+        </div>
+        <div class="product">
+            <img src="nhanvang.jpg" alt="Nhẫn Vàng">
+            <h3>Nhẫn Vàng 24K</h3>
+            <p>Nhẫn vàng 24K với thiết kế đơn giản nhưng không kém phần sang trọng.</p>
+            <a href="product-details.html" class="btn">Tìm Hiểu Thêm</a>
+        </div>
+    </section>
 
-                <div id="welcome">
-                    <h2>Upcoming Events</h2>
-                    <p>Don't miss the exciting matches coming up this season...</p>
-                    <button>More</button>
-                </div>
-            </div>
-        </section>
+    <!-- Liên Hệ -->
+    <section id="contact">
+        <h2>Liên Hệ Với Chúng Tôi</h2>
+        <p>Email: contact@luxjewel.com</p>
+        <p>Điện thoại: (0123) 456-789</p>
+        <form action="submit_form.php" method="post">
+            <label for="name">Họ Tên:</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Tin Nhắn:</label>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+            <input type="submit" value="Gửi">
+        </form>
+    </section>
 
-        <aside class="right-column">
-            <div id="main-menu">
-                <h3>Teams</h3>
-                <ul>
-                    <li><a href="#">Team 1</a></li>
-                    <li><a href="#">Team 2</a></li>
-                    <li><a href="#">Team 3</a></li>
-                    <li><a href="#">Team 4</a></li>
-                    <li><a href="#">Team 5</a></li>
-                    <li><a href="#">Team 6</a></li>
-                </ul>
-            </div>
-
-            <div id="resources">
-                <h3>Football Resources</h3>
-                <p>Stay updated with the latest news and articles about football.</p>
-            </div>
-        </aside>
-    </div>
-
+    <!-- Footer -->
     <footer>
-        <p>Copyright © 2024. Design by Football Fan Zone</p>
+        <p>&copy; 2024 LuxJewel. Tất cả các quyền được bảo lưu.</p>
+        <div class="social">
+            <a href="#">Facebook</a> | 
+            <a href="#">Instagram</a> | 
+            <a href="#">Twitter</a>
+        </div>
     </footer>
 </body>
 </html>
